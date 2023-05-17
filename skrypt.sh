@@ -27,3 +27,8 @@ elif [ $1 == "--help" ]; then
 	echo "--logs - tworzy 100 plików tekstowych logx.txt w bieżącej lokalizacji"
 	echo "--logs <liczba> - tworzy podaną liczbę plików tekstowych logx.txt w bieżącej lokalizacji"
 fi
+
+#stworzenie tagu v1.0 do aktualnej wersji
+
+git checkout main
+git tag v1.0 
