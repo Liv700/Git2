@@ -1,4 +1,5 @@
-#ignoruj poniższe:
+#ignorowane pliki:
+*.log
 
 *log*
 
