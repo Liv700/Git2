@@ -21,5 +21,9 @@ elif [ $1 == "--logs" ]; then
                         echo "Data utworzenia:" $(date +%F)>>log$i.txt
 		done
 	fi
+elif [ $1 == "--help" ]; then
+	echo "Dostępne opcje:"
+	echo "--date - wyświetla bieżącą datę"
+	echo "--logs - tworzy 100 plików tekstowych logx.txt w bieżącej lokalizacji"
+	echo "--logs <liczba> - tworzy podaną liczbę plików tekstowych logx.txt w bieżącej lokalizacji"
 fi
-
