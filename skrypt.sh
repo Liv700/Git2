@@ -26,7 +26,9 @@ elif [ $1 == "--help" ] || [ $1 == "-h" ]; then
 	echo "--date lub -d - wyświetla bieżącą datę"
 	echo "--logs lub -l - tworzy 100 plików tekstowych logx.txt w bieżącej lokalizacji"
 	echo "--logs <liczba> lub -l <liczba> - tworzy podaną liczbę plików tekstowych logx.txt w bieżącej lokalizacji"
-elif [ $1 == "init" ]; then
+	echo "--init - klonuje całe repozytorium do bieżącego katalogu i ustawia ścieżkę w zmiennej środowiskowej PATH"
+	echo "--error <liczba> lub -e <liczba> - tworzy podaną liczbę plików errorx.txt w katalogu o tej samej nazwie , bez podania liczby tworzy 100 plików errorx.txt z katalogami"
+elif [ $1 == "--init" ]; then
 	git clone https://github.com/Liv700/Git2
 	sciezka=$pwd
 	export PATH=$sciezka:$PATH
