@@ -13,7 +13,7 @@ elif [ $1 == "--logs" ] || [ $1 == "-l" ]; then
 		done
 	elif [ $# == 2 ]; then
 		var=$2
-		for i in {1..$var}
+		for i in `seq 1 $var`
 		do
 			touch log$i.txt
 			echo "Nazwa pliku to:" log$i.txt>log$i.txt
@@ -30,5 +30,19 @@ elif [ $1 == "init" ]; then
 	git clone https://github.com/Liv700/Git2
 	sciezka=$pwd
 	export PATH=$sciezka:$PATH
-
+elif [ $1 == "--error" ] || [ $1 == "-e" ]; then
+	if [ $# == 1 ]; then
+		for i in {1..100}
+		do
+			mkdir error$i
+			touch error$i/error$i.txt
+		done
+	elif [ $# == 2 ]; then
+		for i in `seq 1 $2`
+		do
+			mkdir error$i
+			touch error$i/error$i.txt
+		done
+	fi
 fi
+
