@@ -26,4 +26,9 @@ elif [ $1 == "--help" ] || [ $1 == "-h" ]; then
 	echo "--date lub -d - wyświetla bieżącą datę"
 	echo "--logs lub -l - tworzy 100 plików tekstowych logx.txt w bieżącej lokalizacji"
 	echo "--logs <liczba> lub -l <liczba> - tworzy podaną liczbę plików tekstowych logx.txt w bieżącej lokalizacji"
+elif [ $1 == "init" ]; then
+	git clone https://github.com/Liv700/Git2
+	sciezka=$pwd
+	export PATH=$sciezka:$PATH
+
 fi
