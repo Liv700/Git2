@@ -23,7 +23,7 @@ elif [ $1 == "--logs" ] || [ $1 == "-l" ]; then
 	fi
 elif [ $1 == "--help" ] || [ $1 == "-h" ]; then
 	echo "Dostępne opcje:"
-	echo "--date - wyświetla bieżącą datę"
-	echo "--logs - tworzy 100 plików tekstowych logx.txt w bieżącej lokalizacji"
-	echo "--logs <liczba> - tworzy podaną liczbę plików tekstowych logx.txt w bieżącej lokalizacji"
+	echo "--date lub -d - wyświetla bieżącą datę"
+	echo "--logs lub -l - tworzy 100 plików tekstowych logx.txt w bieżącej lokalizacji"
+	echo "--logs <liczba> lub -l <liczba> - tworzy podaną liczbę plików tekstowych logx.txt w bieżącej lokalizacji"
 fi
